@@ -1,0 +1,245 @@
+import React from "react";
+
+const Watch = [
+    {
+      "id":1,
+      "title": "boAt Vertex Smartwatch",
+      "link": "https://www.flipkart.com/boat-vertex-smartwatch/p/itm256f11245986b",
+      "current_price": 2499,
+      "price": 6990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kv6zvrk0/smartwatch/k/a/v/android-ios-vertex-boat-no-original-imag855hzzn7xt6t.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-vertex-smartwatch/p/itm256f11245986b"
+    },
+    {
+      "id":2,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 1999,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":3,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 1999,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":4,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 2999,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":5,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 2199,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":6,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 2999,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":7,
+      "title": "boAt Storm Smartwatch",
+      "link": "https://www.flipkart.com/boat-storm-smartwatch/p/itm215a48c547168",
+      "current_price": 2199,
+      "price": 5990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/boat-storm-smartwatch/p/itm215a48c547168"
+    },
+    {
+      "id":8,
+      "title": "realme Watch 2",
+      "link": "https://www.flipkart.com/realme-watch-2/p/itm44d90218d1891",
+      "current_price": 2799,
+      "price": 3999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kr2e3680/smartwatch/i/i/t/1-4-rmw2008-android-ios-realme-original-imag4y6fynwz3ukt.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/realme-watch-2/p/itm44d90218d1891"
+    },
+    {
+      "id":9,
+      "title": "DIZO Watch 2 (by realme TechLife)",
+      "link": "https://www.flipkart.com/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56",
+      "current_price": 2299,
+      "price": 3999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/smartwatch/f/o/c/1-69-android-ios-dw2118-dizo-no-original-imag6hhynsbyrrzf.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56"
+    },
+    {
+      "id":10,
+      "title": "DIZO Watch 2 (by realme TechLife)",
+      "link": "https://www.flipkart.com/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56",
+      "current_price": 2999,
+      "price": 3999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/smartwatch/f/o/c/1-69-android-ios-dw2118-dizo-no-original-imag6hhynsbyrrzf.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56"
+    },
+    {
+      "id":11,
+      "title": "DIZO Watch 2 (by realme TechLife)",
+      "link": "https://www.flipkart.com/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56",
+      "current_price": 2499,
+      "price": 3999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kt1u3rk0/smartwatch/f/o/c/1-69-android-ios-dw2118-dizo-no-original-imag6hhynsbyrrzf.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/dizo-watch-2-by-realme-techlife/p/itm59913ba399d56"
+    },
+    {
+      "id":12,
+      "title": "SAMSUNG Galaxy Watch Active 2 Aluminium Smartwatch",
+      "link": "https://www.flipkart.com/samsung-galaxy-watch-active-2-aluminium-smartwatch/p/itmdf82694656d9d",
+      "current_price": 11990,
+      "price": 25990,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kusph8w0/smartwatch/h/x/5/android-ios-sm-r820nzkiinu-sm-r820nzkainu-samsung-yes-original-imag7ugzueycpbsm.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/samsung-galaxy-watch-active-2-aluminium-smartwatch/p/itmdf82694656d9d"
+    },
+    {
+      "id":13,
+      "title": "Noise ColorFit Qube SpO2 Charcoal Black Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-qube-spo2-charcoal-black-smartwatch/p/itm2d9dc41a02202",
+      "current_price": 1999,
+      "price": 4999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/ku1k4280/smartwatch/t/i/a/android-ios-wrb-sw-colorfitqubeoxy-std-blk-blk-noise-no-original-imag79y4ar4hjbgb.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-qube-spo2-charcoal-black-smartwatch/p/itm2d9dc41a02202"
+    },
+    {
+      "id":14,
+      "title": "Fire-Boltt Talk Bluetooth Calling Smartwatch",
+      "link": "https://www.flipkart.com/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145",
+      "current_price": 2999,
+      "price": 9999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kpr8k280/smartwatch/k/a/s/bsw004-android-ios-fire-boltt-original-imag3wwbrtpdpg6g.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145"
+    },
+    {
+      "id":15,
+      "title": "Fire-Boltt Talk Bluetooth Calling Smartwatch",
+      "link": "https://www.flipkart.com/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145",
+      "current_price": 2999,
+      "price": 9999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kpr8k280/smartwatch/k/a/s/bsw004-android-ios-fire-boltt-original-imag3wwbrtpdpg6g.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145"
+    },
+    {
+      "id":16,
+      "title": "Fire-Boltt Talk Bluetooth Calling Smartwatch",
+      "link": "https://www.flipkart.com/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145",
+      "current_price": 3499,
+      "price": 9999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kpr8k280/smartwatch/k/a/s/bsw004-android-ios-fire-boltt-original-imag3wwbrtpdpg6g.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/fire-boltt-talk-bluetooth-calling-smartwatch/p/itm5df1ad0845145"
+    },
+    {
+      "id":17,
+      "title": "Elite T55 Series 5 Dual Belt Smartwatch",
+      "link": "https://www.flipkart.com/elite-t55-series-5-dual-belt-smartwatch/p/itmf353991f40017",
+      "current_price": 1169,
+      "price": 5999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/ki4w0i80-0/smartwatch/b/g/w/android-ios-watch-series-5-t55-bluetooth-call-smart-watch-dual-original-imafw327qgghrzvc.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/elite-t55-series-5-dual-belt-smartwatch/p/itmf353991f40017"
+    },
+    {
+      "id":18,
+      "title": "Noise ColorFit Brio Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-brio-smartwatch/p/itmfe15b0d7dd2f4",
+      "current_price": 2599,
+      "price": 5999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/ku04o7k0/smartwatch/d/z/u/android-ios-wrb-sw-colorfitbrio-std-blk-blk-noise-no-original-imag77xp9rd3rqgm.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-brio-smartwatch/p/itmfe15b0d7dd2f4"
+    },
+    {
+      "id":19,
+      "title": "Noise ColorFit Pro 3 Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-pro-3-smartwatch/p/itmfee75c21f7ff6",
+      "current_price": 3499,
+      "price": 5999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/knrsjgw0/smartwatch/x/b/b/wrb-sw-colorfitpro3-std-ros-pnk-android-ios-noise-original-imag2drhshyutzm8.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-pro-3-smartwatch/p/itmfee75c21f7ff6"
+    },
+    {
+      "id":20,
+      "title": "Noise Fit Active SpO2 Smartwatch",
+      "link": "https://www.flipkart.com/noise-fit-active-spo2-smartwatch/p/itm9157364a66a69",
+      "current_price": 2999,
+      "price": 5999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/kolsscw0/smartwatch/9/l/s/wrb-sw-active-std-blu-android-ios-noise-original-imag3f7s4nugphge.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-fit-active-spo2-smartwatch/p/itm9157364a66a69"
+    },
+    {
+      "id":21,
+      "title": "Lastpoint calling Android 4G bluetooth Tracer Smartwatch",
+      "link": "https://www.flipkart.com/lastpoint-calling-android-4g-bluetooth-tracer-smartwatch/p/itmde448f8fb3007",
+      "current_price": 995,
+      "price": 1499,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/k4ehnrk0/smartwatch/w/t/g/black-color-smartwatch-a1b-47-mindsart-original-imafn67dmhz3utw8.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/lastpoint-calling-android-4g-bluetooth-tracer-smartwatch/p/itmde448f8fb3007"
+    },
+    {
+      "id":22,
+      "title": "Noise ColorFit Qube SpO2 Beige Gold Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-qube-spo2-beige-gold-smartwatch/p/itm9927bceb148ce",
+      "current_price": 1899,
+      "price": 4999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/ku1k4280/smartwatch/f/z/k/android-ios-wrb-sw-colorfitqubeoxy-std-rgld-pnk-noise-no-original-imag79y4dphr2wrj.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-qube-spo2-beige-gold-smartwatch/p/itm9927bceb148ce"
+    },
+    {
+      "id":23,
+      "title": "Noise ColorFit Pro 2 Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-pro-2-smartwatch/p/itm6e504a0c97a11",
+      "current_price": 2299,
+      "price": 4999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/k8vyf0w0/smartwatch/c/z/a/wrb-sw-colorfitpro2-std-teal-android-ios-noise-original-imafqsqgz4tfyzfs.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-pro-2-smartwatch/p/itm6e504a0c97a11"
+    },
+    {
+      "id":24,
+      "title": "Noise ColorFit Pro 3 Smartwatch",
+      "link": "https://www.flipkart.com/noise-colorfit-pro-3-smartwatch/p/itm2e817033f1466",
+      "current_price": 3499,
+      "price": 5999,
+      "discounted": true,
+      "thumbnail": "https://rukminim1.flixcart.com/image/312/312/knrsjgw0/smartwatch/x/b/b/wrb-sw-colorfitpro3-std-ros-pnk-android-ios-noise-original-imag2drhshyutzm8.jpeg?q=70",
+      "query_url": "https://flipkart.dvishal485.workers.dev/product/noise-colorfit-pro-3-smartwatch/p/itm2e817033f1466"
+    }]
+
+    export default Watch
