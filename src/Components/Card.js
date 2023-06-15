@@ -34,7 +34,7 @@ export default function Card() {
 setloading(true);
 setTimeout(()=>{
 setloading(false);
-},10)
+},3000)
   },[])
   
   return (
