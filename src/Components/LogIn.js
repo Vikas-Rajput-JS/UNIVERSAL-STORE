@@ -73,7 +73,7 @@ console.log(email1)
                     let pass = JSON.parse(sessionStorage.getItem('Pass'))
                     
                     if(email==email1,password==pass){
-                        setTimeout(() => window.location.href='http://localhost:3000/Home', 5000);
+                        setTimeout(() => window.location.href='/Home', 5000);
                         toast.success('Log In Successfully')
                         setTimeout(() => toast('🦄 Redirecting To Home Page', {
                             position: "top-center",
@@ -91,7 +91,7 @@ console.log(email1)
 
                   }}>Sign in</button>
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Don’t have an account yet? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500"><Link to={'/'}>Sign Up</Link></a>
+                      Don’t have an account yet? <a  className="font-medium text-primary-600 hover:underline dark:text-primary-500"><Link to={'/'}>Sign Up</Link></a>
                   </p>
              
           </div>
