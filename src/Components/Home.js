@@ -14,6 +14,7 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 import Maskara from "./APIs/Maskara";
 
 export default function Home() {
+  localStorage.setItem("Data", JSON.stringify(Data));
   const [items, setitems] = useState(Data);
 
   return (
