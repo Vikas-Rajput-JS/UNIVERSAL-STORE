@@ -61,35 +61,37 @@ setloading(false);
                       </div>
                       <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500 text-white">Forgot password?</a>
                   </div>
+              <Link to={'/Home'}>
                   <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-lime-500" onClick={()=>{
-
-let email1 = document.getElementById('email').value
-let password = document.getElementById('password').value
-
-console.log(email1)
-
+                    
+                    let email1 = document.getElementById('email').value
+                    let password = document.getElementById('password').value
+                    
+                    console.log(email1)
+                    
                     let email = JSON.parse(sessionStorage.getItem('Email'))
                     
                     let pass = JSON.parse(sessionStorage.getItem('Pass'))
                     
                     if(email==email1,password==pass){
-                        setTimeout(() => window.location.href='/Home', 5000);
-                        toast.success('Log In Successfully')
-                        setTimeout(() => toast('🦄 Redirecting To Home Page', {
-                            position: "top-center",
-                            autoClose: 5000,
-                            hideProgressBar: false,
-                            closeOnClick: true,
-                            pauseOnHover: true,
-                            draggable: true,
-                            progress: undefined,
-                            theme: "light",
-                            }), 3000);
+                      // setTimeout(() => window.location.href='/Home', 5000);
+                      toast.success('Log In Successfully')
+                      setTimeout(() => toast('🦄 Redirecting To Home Page', {
+                        position: "top-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                      }), 3000);
                     }else{
-                        toast.error('Please Enter Valid Crendtials.')
+                      toast.error('Please Enter Valid Crendtials.')
                     }
-
+                    
                   }}>Sign in</button>
+                  </Link>
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                       Don’t have an account yet? <a  className="font-medium text-primary-600 hover:underline dark:text-primary-500"><Link to={'/'}>Sign Up</Link></a>
                   </p>
