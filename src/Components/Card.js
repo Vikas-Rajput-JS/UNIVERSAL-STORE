@@ -12,18 +12,20 @@ import { ADD } from "../Redux/Actions/Action";
 
 
 export default function Card() {
-
   
   const Watch = JSON.parse(localStorage.getItem('Data'))
   const Watch1 = localStorage.getItem('dat')
   const [items, setitems] = useState(Watch);
+  
 
+
+  
 
   const dispatch = useDispatch();
  
   const getdata = useSelector((state) => state.CartRedcuer.Carts);
 
-console.log('hy')
+
   const send = (e) => {
     dispatch(ADD(e));
   };
