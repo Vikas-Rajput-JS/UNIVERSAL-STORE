@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { useState } from 'react';
-
+import Data from "./APIs/API";
 
 
 export default function LogIn() {
@@ -18,7 +18,7 @@ setloading(false);
   
    
   return (
-    <div className='w-[100%] h-[100vh] bg-orange-400' >
+    <div className='w-[100%] h-auto bg-orange-400' >
       <section className="bg-gray-50 " style={{backgroundImage:'url( https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a65f1b65-2580-4dba-a69c-6cb8799492d2/d727cq3-498b026e-d0b8-4af3-b0fc-243b3d2d5784.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2NWYxYjY1LTI1ODAtNGRiYS1hNjljLTZjYjg3OTk0OTJkMlwvZDcyN2NxMy00OThiMDI2ZS1kMGI4LTRhZjMtYjBmYy0yNDNiM2QyZDU3ODQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9eJtF9ZBB0NnJ6y31WAar-U3Kv79LY8YcmcaB0UKC0E)',
     backgroundRepeat:'no-repeat',
     backgroundSize:'cover'}}>
@@ -61,7 +61,7 @@ setloading(false);
                       </div>
                       <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500 text-white">Forgot password?</a>
                   </div>
-              <Link to={'/Home'}>
+                  <Link to={'/Home'}>
                   <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-lime-500" onClick={()=>{
                     
                     let email1 = document.getElementById('email').value
@@ -73,6 +73,7 @@ setloading(false);
                     
                     let pass = JSON.parse(sessionStorage.getItem('Pass'))
                     
+                    localStorage.setItem("Data", JSON.stringify(Data));
                     if(email==email1,password==pass){
                       // setTimeout(() => window.location.href='/Home', 5000);
                       toast.success('Log In Successfully')
