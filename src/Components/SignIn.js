@@ -14,7 +14,7 @@ setTimeout(()=>{
 setloading(false);
 },2000)
   },[])
-//   https://media1.giphy.com/media/JpScsr53qh6sR6dSeJ/giphy.gif
+
   return (
     <div className='w-[100%] h-[100vh] bg-orange-400  ' style={{backgroundImage:'url(https://res.cloudinary.com/practicaldev/image/fetch/s--Rpm5i2vq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zzszorn7hxyvther2lea.gif)',
     backgroundRepeat:'no-repeat',
@@ -73,11 +73,11 @@ setloading(false);
                 
                             
                             if(inpt!='',inpt2!='',inpt3!=''){
-                                // window.location.href='http://localhost:3000/login'
+                               
                                 toast.success('Account created successfully.')
                                
                                 
-                                setTimeout(() => window.location.href='http://localhost:3000/login', 5000);
+                                setTimeout(() => window.location.href='/login', 5000);
                                 setTimeout(() => toast('🦄 Redirecting To LogIn Page', {
                                     position: "top-center",
                                     autoClose: 5000,
