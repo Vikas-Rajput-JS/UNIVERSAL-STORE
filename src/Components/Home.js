@@ -53,6 +53,46 @@ export default function Home() {
             Watches
           </span>
         </a>
+       
+        <a
+          className="relative inline-flex ml-10 cursor-pointer items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+          onClick={() => {
+            window.location.href = "/Home";
+            localStorage.setItem("dat", "ok");
+            localStorage.setItem("Data", JSON.stringify(Maskara));
+          }}
+        >
+          <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+          <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+           Maskara
+          </span>
+        </a>
+        <a
+          className="relative inline-flex ml-10 cursor-pointer items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+          onClick={() => {
+            window.location.href = "/Home";
+            localStorage.setItem("dat", "ok");
+            localStorage.setItem("Data", JSON.stringify(perfume));
+          }}
+        >
+          <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+          <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+            Perfume
+          </span>
+        </a>
+        <a
+          className="relative inline-flex ml-10 cursor-pointer items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+          onClick={() => {
+            window.location.href = "/Home";
+            localStorage.setItem("dat", "ok");
+            localStorage.setItem("Data", JSON.stringify(Mackup));
+          }}
+        >
+          <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+          <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+            Mackup
+          </span>
+        </a>
       </div>
 
       <form className="flex items-center mt-10">
