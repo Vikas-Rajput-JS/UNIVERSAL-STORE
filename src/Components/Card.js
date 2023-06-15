@@ -12,9 +12,10 @@ import { ADD } from "../Redux/Actions/Action";
 
 
 export default function Card() {
+  
   const Watch = JSON.parse(localStorage.getItem('Data'))
   const Watch1 = localStorage.getItem('dat')
-  const [items, setitems] = useState(Data);
+  const [items, setitems] = useState(Watch);
 
 
   const dispatch = useDispatch();
