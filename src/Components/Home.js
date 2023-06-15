@@ -31,7 +31,7 @@ export default function Home() {
         <a
           className="relative inline-flex items-center justify-start cursor-pointer inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
           onClick={() => {
-            window.location.href = "http://localhost:3000/Home";
+            window.location.href = "/Home";
             localStorage.setItem("Data", JSON.stringify(Data));
           }}
         >
@@ -43,7 +43,7 @@ export default function Home() {
         <a
           className="relative inline-flex ml-10 cursor-pointer items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
           onClick={() => {
-            window.location.href = "http://localhost:3000/Home";
+            window.location.href = "/Home";
             localStorage.setItem("dat", "ok");
             localStorage.setItem("Data", JSON.stringify(Watch));
           }}
