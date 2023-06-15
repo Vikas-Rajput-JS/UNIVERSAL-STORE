@@ -23,7 +23,7 @@ export default function Card() {
  
   const getdata = useSelector((state) => state.CartRedcuer.Carts);
 
-
+console.log('hy')
   const send = (e) => {
     dispatch(ADD(e));
   };
